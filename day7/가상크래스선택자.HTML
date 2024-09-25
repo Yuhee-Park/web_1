@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스선택자</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(243, 201, 201);
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .box_text {
+            margin: 0;
+            font-size: 50px;
+            font-weight: 900;
+            color: blueviolet;
+        }
+
+        .box:hover > .box_text {
+            color: black;
+        }
+       
+        .box:hover {
+            background-color: blanchedalmond;
+            transition: 0.5s;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 150px;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .box2 > p {
+            font-size: 32px;
+            color: aqua;
+        }
+
+        .box2:active {
+            background-color: rgb(244, 207, 242);
+        }
+
+        .box2:active > p {
+            color: darkblue;
+        }
+
+        .japan_food > li:nth-child(odd) {
+            color: brown;
+        }
+
+        .japan_food > li:nth-child(5) {
+            color: rgb(7, 202, 59);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="box_text">박스입니다.</p>
+    </div>
+
+    <div class="box2">
+        <p>active 실습</p>
+
+    </div>
+    
+    <ul class="japan_food">
+        <li>초밥</li>
+        <li>가츠동</li>
+        <li>우동</li>
+        <li>라멘</li>
+        <li>소바</li>
+    </ul>
+</body>
+</html>

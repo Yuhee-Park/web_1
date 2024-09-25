@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <style>
+         /* {
+            color: blue;
+         } */
+
+         h1 {
+            color: darkgoldenrod;
+         }
+
+         #id_section {
+            background-color: blanchedalmond;
+         }
+
+         .class_section {
+            background-color: aqua;
+         }
+
+         .web_level > li {
+            color: coral;
+         }
+
+         .web_level > li > a {
+            text-decoration: none;
+            color: darkmagenta;
+         }
+
+         .web_class_name a {
+            text-decoration: none;
+            color: rgb(142, 159, 184);
+         }
+
+         .front_end_lag ~ li {
+            background-color: darkkhaki;
+         }
+
+         .china_food + li {
+            background-color: chocolate;
+         }
+
+         .p_tag, h3, #span_id {
+            background-color: deeppink;
+         }
+
+    </style>
+</head>
+<body>
+    <h1>css선택자</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ut, voluptates atque perferendis error nihil cum laboriosam nesciunt dolorum excepturi quae eaque tenetur a nostrum asperiores. Saepe repudiandae sint ullam?
+    </p>
+
+    <section id="id_section">
+        <h2>아이디 선택자</h2>
+    </section>
+    <section class="class_section">
+        <h2>클래스 선택자</h2>
+    </section>
+
+    <ul class="web_level">
+        <li>
+            <a href="#">
+            웹1
+        </a>
+        </li>
+        <li>웹2</li>
+        <li>웹3</li>
+    </ul>
+    <ul class="web_class_name">
+        <li>웹1
+            <a href="#">
+            
+            </a>
+        </li>
+        <li>웹2</li>
+        <li>웹3</li>
+    </ul>
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li class="front_end_lag">javascript</li>
+        <li>react</li>
+        <li>vue</li>
+    </ul>
+
+    <ul>
+        <li class="china_food">짜장</li>
+        <li>짬뽕</li>
+        <li>javascript</li>
+        <li>react</li>
+        <li>vue</li>
+
+    </ul>
+
+    <div>
+        <p class="p_tag">p태그입니다.</p>
+        <h3>h3태그입니다.</h3>
+        <span id="span_id">span태그입니다.</span>
+    </div>
+</body>
+</html>
