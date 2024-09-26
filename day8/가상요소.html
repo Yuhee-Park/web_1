@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        .box > p::before {
+            content: "오늘은 목요일";
+            color: blue;
+        }
+
+        .box > p::after {
+            content: "하지만 저는 주말에도 일해요";
+            color: brown;
+        }
+
+        .box::before {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            display: block;
+            content: "";
+        }
+
+        .box::after {
+            width: 550px;
+            height: 10px;
+            content: "";
+            background-color: aquamarine;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>내일은 즐거운 휴일입니다.</p>
+    </div>
+</body>
+</html>
