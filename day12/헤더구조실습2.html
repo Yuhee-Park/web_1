@@ -5,17 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>헤더구조실습2</title>
     <style>
-        .serch {
-            display: flex;
-            justify-content: center;
-            width:1000px;
-            height: 50px;
-            background-color: darkgrey;
+        body {
+            padding: 0;
+            margin: 0;
         }
 
-        .menu {
+        header {
+            margin-top: 70px;
+            justify-content: center;
+            display: flex wrap;
+            position: absolute;
+            top: 0%;
+            left: 25%;
+        }
+
+        .serch {
+            display: flex wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 1200px;
+            color: #fff;
+            background-color: darkgrey;
+            text-align: center;
+            line-height: 100px;
+            padding: 0 16px;
+            margin-bottom:3px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
             display: flex;
             justify-content: space-between;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            text-align: center;
+            line-height: 20px;
+            padding: 0 10px;
+            list-style: none;
+            height: 70px;
+        }
+
+        .menu > li {
+            margin: 0 30px;
+            width: 60px;
+            height: 30px;
+            background-color: darkgrey;
+            border-radius: 10px;
+        }
+
+        .menu > li > a {
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            border-radius: 10px;
+            border: 10px;
         }
     </style>
 </head>
@@ -24,6 +76,7 @@
         <div class="serch">
             검색
         </div>
+        <p>
         <ul class="menu">
             <li>
                 <a href="#">
@@ -76,6 +129,7 @@
                 </a>
             </li>
         </ul>
+    </p>
     </header>
 </body>
 </html>
