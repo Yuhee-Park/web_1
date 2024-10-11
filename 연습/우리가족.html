@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오뚜기</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+        }
+
+        .box {
+            position: relative;
+            width: 40%;
+            color: #fff;
+            margin: 10px;
+            height: 500px;
+            padding: 16px;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box:nth-child(1) {
+            background-image: url(./P20190122_122540000_C6E16BC9-167E-40C2-85BB-2039DE4487BC.jpg);
+        }
+
+        .box:nth-child(2) {
+            background: url(./P20190122_152346000_60E7B6B1-AEA7-40A5-BD19-5F118067723B.jpg);
+        }
+
+        .box:nth-child(3) {
+            background: url(./P20190123_174346836_B7A426C4-9107-4486-9DC1-4F096F3565CF.JPG);
+        }
+
+        .box:hover {
+            background-size: cover;
+            flex-shrink: 0;
+            transition: 0.3s;
+        }
+
+        .black {
+            background-color: #000;
+            width: 100%;
+            height: 532px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 25px;
+            opacity: 0.4;
+        }
+
+        .box:hover .black {
+            opacity: 0;
+        }
+
+        .z-index {
+            z-index: 1;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 56px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="z-index">
+                <p>chang_m1</p>
+                <h2>창민1</h2>
+            </div>
+            <div class=black></div>
+        </div>
+
+        <div class="box">
+            <div class="z-index">
+                <p>chang_m2</p>
+                <h2>창민2</h2>
+            </div>
+            <div class=black></div>
+        </div>
+
+        <div class="box">
+            <div class="z-index">
+                <p>chang_m3</p>
+                <h2>창민3</h2>
+            </div>
+            <div class=black></div>
+        </div>
+    </section>
+</body>
+
+</html>
