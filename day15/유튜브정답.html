@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브정답</title>
+    <script src="https://kit.fontawesome.com/386b64400f.js" crossorigin="anonymous"></script>
+
+    <style>
+        .comment_container {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px;
+            max-width: 1200px;
+        }
+
+        figure {
+            background: url(./images.png);
+            width: 40px;
+            height: 40px;
+            margin: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        figure > a {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .user_comment {
+            flex-basis: 93%;
+        }
+
+        .user_name,
+        .comment_content {
+            font-size: 14px;
+        }
+
+        .icon_box {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon_box > div {
+            margin-right: 20px;
+        }
+
+        .recomment {
+            color: blue;
+            width: 100px;
+            height: 70px;
+            text-align: left;
+            line-height: 70px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="comment_container">
+        <figure>
+            <a href="#"></a>
+        </figure>
+        <div class="user_comment">
+            <h2 class="user_name">
+                유저네임
+            </h2>
+            <p class="comment_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Molestias sequi non recusandae ullam ipsam, fugiat enim vitae consectetur<br>
+                quod voluptatem facilis explicabo cupiditate eos eum fugit nostrum quia blanditiis officia.
+            </p>
+            <div class="icon_box">
+                <div>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span>482</span>
+                </div>
+                <div>
+                <i class="fa-regular fa-thumbs-down"></i>
+                </div>
+                <p>reple</p>
+            </div>
+          <div class="recomment">
+           <i class="fa-solid fa-chevron-down"></i> 
+           <span>1 reply</span>
+          </div>
+        </div>
+        <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </div>
+</body>
+</html>
